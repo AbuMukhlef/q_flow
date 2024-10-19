@@ -4,8 +4,14 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:my_melos_widgets/widgets.dart';
 import 'screen/login_screen.dart';
 
-void main() {
-  runApp(const MainApp());
+void main() async{
+  WidgetsFlutterBinding.ensureInitialized();
+  await EasyLocalization.ensureInitialized();
+  runApp(EasyLocalization(
+      supportedLocales: const [Locale('en'), Locale('ar')],
+      path: 'assets/translations',
+      fallbackLocale: const Locale('en', 'US'),
+      child: const MainApp()));
 }
 
 class MainApp extends StatelessWidget {

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:my_melos_widgets/core/theme_data/extensions/theme_ext.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
