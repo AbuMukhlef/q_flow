@@ -11,19 +11,16 @@ class LoginScreen extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Padding(
-              padding: EdgeInsets.all(8.0),
-              child: TextField(
-                decoration: InputDecoration(
-                  border: OutlineInputBorder(),
-                  labelText: 'Email',
-                ),
-              ),
+            CustomTextField(
+              hintText: 'Email',
+              controller: TextEditingController(),
+              validation: (String value) {},
             ),
             const SizedBox(height: 16),
-
-            PrimaryBtn(title: 'Abu_Mukhlef', callback: () {  },),
-            
+            PrimaryBtn(
+              title: 'Abu_Mukhlef',
+              callback: () {},
+            ),
           ],
         ),
       ),
