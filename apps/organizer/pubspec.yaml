@@ -14,10 +14,10 @@ dependencies:
   shared_preferences: ^2.3.2
   supabase_flutter: ^2.8.0
   image_picker: ^1.1.2
+  easy_localization: ^3.0.7
 
 # our packages here
   my_melos_widgets: 0.0.1
-  easy_localization: ^3.0.7
 # _______________________
 
 dev_dependencies:
